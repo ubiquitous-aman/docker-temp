@@ -29,9 +29,9 @@ ENV PATH=$SPARK_HOME/bin:$PATH
 WORKDIR /workspace
 
 # Install Python Packages
-COPY requirement.txt .
+COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirement.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Jupyter Port
 EXPOSE 8080
